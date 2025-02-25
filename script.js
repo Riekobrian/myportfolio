@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Skill bars animation
   const skillBars = document.querySelectorAll(".skill-bar");
 
-  const skillsObserver = new IntersectionObserver(
+  const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (skillBars.length > 0) {
     skillBars.forEach((bar) => {
-      skillsObserver.observe(bar);
+      observer.observe(bar);
     });
   }
 
