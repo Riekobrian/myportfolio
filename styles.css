@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #00ff88;
-  --secondary-color: #0066ff;
+  --primary-color: #00ff88;  /* Change this to your preferred main color */
+  --secondary-color: #0066ff;  /* Change this to your preferred accent color */
   --bg-color: #0a192f;
   --bg-gradient: linear-gradient(45deg, #0a192f, #1a2942, #0a192f);
   --text-color: #ffffff;
