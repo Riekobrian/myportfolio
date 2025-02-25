@@ -633,9 +633,12 @@ body {
 /* Grid Layout */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   margin-top: 3rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Project Card */
@@ -649,6 +652,14 @@ body {
   opacity: 0;
   transform: translateY(50px);
   animation: fadeInUp 0.8s ease forwards;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 @keyframes fadeInUp {
