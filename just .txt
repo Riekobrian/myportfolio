@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rieko Brian - Data Science & ML Portfolio" />
+    <title>Rieko Brian - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">RB</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="particles-js"></div>
+
+    <!-- Hero Section with Parallax -->
+    <section id="hero" class="parallax">
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+        <div class="parallax-layer layer-3"></div>
+        <div class="container">
+            <h1 id="typewriter" class="neon-text"></h1>
+            <p class="holographic-text">Data Science | Machine Learning | Development</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn-primary button-3d">View Projects</a>
+                <a href="#contact" class="btn-secondary button-3d">Contact Me</a>
+            </div>
+            <div id="scrollIndicator" class="scroll-indicator">
+                <span>Scroll Down to Explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="neon-text">About Me</h2>
+            <div class="about-content">
+                <div class="about-image card-3d">
+                    <img src=".\profile1.jpg" alt="Rieko Brian" />
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate computer science and data science programmer with a focus on creating innovative solutions using cutting-edge technologies. I specialize in machine learning, data analysis, and software development.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Development</h3>
+                            <p>Full-stack development with modern technologies</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning</h3>
+                            <p>AI and ML algorithm implementation</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Data Analysis</h3>
+                            <p>Advanced data visualization and analytics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="neon-text">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category card-3d">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="90">
+                            <span class="skill-name">Python</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <span class="skill-name">Machine Learning</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="80">
+                            <span class="skill-name">Data Analysis</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="75">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="95">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <span class="skill-name">SQL</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 class="neon-text">Featured Projects</h2>
+        <div class="project-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+               <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            
+            
+
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+</section>
+
+                <!-- Additional project cards with the same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   <section id="contact">
+    <div class="container">
+        <h2 class="neon-text">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="neon-text">Let's Connect</h3>
+                <p>Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>email@example.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Location, Country</span>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://linkedin.com" class="social neon-social"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social neon-social"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social neon-social"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" class="card-3d">
+                <div class="form-group">
+                    <input type="text" id="name" required />
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required />
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn-neon button-3d">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="about-me">
+                <h3 class="neon-text">About Me</h3>
+                <p>Hi, I'm Rieko Brian, a passionate developer constantly exploring the intersection of technology and creativity.</p>
+            </div>
+            <div class="footer-links">
+                <h3 class="neon-text">Quick Links</h3>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="neon-text">Stay Connected</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social-link github"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://scholar.google.com" class="social-link scholar"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Rieko Brian. Crafted with ❤️ and endless creativity.</p>
+    </div>
+</footer>
+<section id="contact">
+    <div class="container">
+        <h2 class="neon-text">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="neon-text">Let's Connect</h3>
+                <p>Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>email@example.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Location, Country</span>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://linkedin.com" class="social neon-social"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social neon-social"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social neon-social"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" class="card-3d">
+                <div class="form-group">
+                    <input type="text" id="name" required />
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required />
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn-neon button-3d">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="about-me">
+                <h3 class="neon-text">About Me</h3>
+                <p>Hi, I'm Rieko Brian, a passionate developer constantly exploring the intersection of technology and creativity.</p>
+            </div>
+            <div class="footer-links">
+                <h3 class="neon-text">Quick Links</h3>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="neon-text">Stay Connected</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social-link github"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://scholar.google.com" class="social-link scholar"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Rieko Brian. Crafted with ❤️ and endless creativity.</p>
+    </div>
+</footer>
+<section id="contact">
+    <div class="container">
+        <h2 class="neon-text">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="neon-text">Let's Connect</h3>
+                <p>Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>email@example.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Location, Country</span>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://linkedin.com" class="social neon-social"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social neon-social"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social neon-social"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" class="card-3d">
+                <div class="form-group">
+                    <input type="text" id="name" required />
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required />
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn-neon button-3d">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="about-me">
+                <h3 class="neon-text">About Me</h3>
+                <p>Hi, I'm Rieko Brian, a passionate developer constantly exploring the intersection of technology and creativity.</p>
+            </div>
+            <div class="footer-links">
+                <h3 class="neon-text">Quick Links</h3>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="neon-text">Stay Connected</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social-link github"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://scholar.google.com" class="social-link scholar"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Rieko Brian. Crafted with ❤️ and endless creativity.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+css
+
+
+
+
+
+
+
+
+
+:root {
+    --primary-color: #00ff88;
+    --secondary-color: #0066ff;
+    --bg-color: #0a192f;
+    --bg-gradient: linear-gradient(45deg, #0a192f, #1a2942, #0a192f);
+    --text-color: #ffffff;
+    --card-bg: rgba(26, 41, 66, 0.95);
+    --neon-glow: 0 0 10px var(--primary-color);
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-gradient);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: var(--text-color);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Particles Background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(10, 25, 47, 0.95);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  width: 100%;
+
+  /* Add this line */
+  flex-wrap: wrap; 
+}
+
+
+
+
+
+.nav-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.typewriter {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: neonText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonText {
+    from {
+        text-shadow: 0 0 10px var(--primary-color),
+                     0 0 20px var(--primary-color),
+                     0 0 30px var(--primary-color);
+    }
+    to {
+        text-shadow: 0 0 5px var(--primary-color),
+                     0 0 10px var(--primary-color),
+                     0 0 15px var(--primary-color);
+    }
+}
+
+/* About Section */
+/* About Section Styles */
+#about {
+    padding: 50px 0; /* Add some top and bottom padding */
+}
+
+.about-content {
+    display: flex; /* Use Flexbox for layout */
+    align-items: flex-start; /* Align items to the top */
+    gap: 30px; /* Adjust spacing between image and text */
+}
+
+.about-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    max-width: 400px; /* Set a maximum width for the image */
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents a small space below the image */
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+.about-text {
+    flex: 1; /* Allow the text to take up remaining space */
+    color: white; /* Important: Add text color for contrast */
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid for highlights */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.highlight-item {
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.highlight-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0ff; /* Neon color for icons */
+}
+
+.highlight-item h3 {
+    margin-bottom: 5px;
+    color: #0ff; /* Neon color for headings */
+}
+
+.highlight-item p {
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-highlights{
+        text-align: left;
+    }
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-bar {
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.skill-bar .progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+    position: relative;
+}
+
+.skill-bar .progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+
+/* Projects Section */
+#projects {
+    padding: 4rem 2rem;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid Layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Project Card */
+.project-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), var(--neon-glow);
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover::before {
+    transform: translateY(-100%);
+}
+
+/* Project Image */
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Project Content */
+.project-content h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.project-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.project-tech span {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-tech span:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Buttons */
+.neon-button {
+    color: white;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.neon-button:hover {
+    box-shadow: var(--neon-glow), 0 0 30px var(--secondary-color);
+    background: var(--primary-color);
+    color: black;
+}
+
+/* Contact Form */
+/* Contact Section */
+#contact {
+    padding: 5rem 2rem;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.contact-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.contact-method i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.contact-social {
+    margin-top: 2rem;
+}
+
+.contact-social a {
+    margin: 0 0.5rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-social a:hover {
+    transform: scale(1.2);
+    box-shadow: var(--neon-glow);
+}
+
+/* Footer */
+footer {
+    padding: 4rem 2rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-grid h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-grid ul li {
+    margin-top: 0.5rem;
+}
+
+.footer-grid ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.footer-grid ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social .social-link {
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social .social-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Neon Button */
+.btn-neon {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.btn-neon:hover {
+    color: var(--bg-color);
+    background: var(--primary-color);
+    box-shadow: var(--neon-glow);
+}
+/* Contact Section */
+#contact {
+    padding: 5rem 2rem;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.contact-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.contact-method i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.contact-social {
+    margin-top: 2rem;
+}
+
+.contact-social a {
+    margin: 0 0.5rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-social a:hover {
+    transform: scale(1.2);
+    box-shadow: var(--neon-glow);
+}
+
+/* Footer */
+footer {
+    padding: 4rem 2rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-grid h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-grid ul li {
+    margin-top: 0.5rem;
+}
+
+.footer-grid ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.footer-grid ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social .social-link {
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social .social-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Neon Button */
+.btn-neon {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.btn-neon:hover {
+    color: var(--bg-color);
+    background: var(--primary-color);
+    box-shadow: var(--neon-glow);
+}
+
+/*  */
+    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+
+
+
+
+
+
+js
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Particles.js initialization with error handling
+  if (typeof particlesJS !== "undefined") {
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: {
+          value: 0.5,
+          random: true,
+        },
+        size: {
+          value: 3,
+          random: true,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+        },
+      },
+    });
+  }
+
+  // Enhanced Typewriter effect
+  const typewriter = document.getElementById("typewriter");
+  const text = "Hello, I'm Rieko Brian";
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      typewriter.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 100);
+    }
+  }
+  type();
+
+  // Enhanced Scroll Animation with Intersection Observer
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible", "show");
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  // Skill bars animation (preserved from original)
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const level = entry.target.getAttribute("data-level");
+        entry.target.querySelector(".progress").style.width = `${level}%`;
+      }
+    });
+  });
+
+  document.querySelectorAll(".skill-bar").forEach((bar) => {
+    skillObserver.observe(bar);
+  });
+
+  // Enhanced Navigation Highlight
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+  // Enhanced Form Submission with Error Handling
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      try {
+        const formData = new FormData(this);
+        const response = await fetch("/submit", {
+          method: "POST",
+          body: formData,
+        });
+
+        if (response.ok) {
+          alert("Thank you for reaching out! I will get back to you soon.");
+        } else {
+          throw new Error("Form submission failed");
+        }
+      } catch (error) {
+        console.error("Form submission error:", error);
+        alert("Something went wrong. Please try again.");
+      }
+    });
+  }
+
+  // Improved Navigation Toggle (preserved from original)
+  const navToggle = document.querySelector(".nav-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
+
+  // New Feature: Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      try {
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      } catch (error) {
+        console.error("Smooth scroll error:", error);
+      }
+    });
+  });
+
+  // New Feature: Parallax Effect
+  document.addEventListener("scroll", () => {
+    const parallaxLayers = document.querySelectorAll(".parallax-layer");
+    const scrollPosition = window.pageYOffset;
+
+    parallaxLayers.forEach((layer) => {
+      const speed = parseFloat(layer.getAttribute("data-speed") || "0.5");
+      const offset = scrollPosition * speed;
+      layer.style.transform = `translateY(${offset}px)`;
+    });
+  });
+});
+
+// Global Error Handling
+window.addEventListener("error", function (e) {
+  console.error("Runtime error:", e);
+});

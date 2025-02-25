@@ -1,0 +1,1014 @@
+General Styles
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Welcome Section */
+#welcome {
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#welcome p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#scrollIndicator {
+    margin-top: 20px;
+    font-size: 1.2em;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #27293d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin: 15px 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////
+
+
+:root {
+    --primary-color: #00ff88;
+    --secondary-color: #0066ff;
+    --bg-color: #0a192f;
+    --bg-gradient: linear-gradient(45deg, #0a192f, #1a2942, #0a192f);
+    --text-color: #ffffff;
+    --card-bg: rgba(26, 41, 66, 0.95);
+    --neon-glow: 0 0 10px var(--primary-color);
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-gradient);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: var(--text-color);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Particles Background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(10, 25, 47, 0.95);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  width: 100%;
+
+  /* Add this line */
+  flex-wrap: wrap; 
+}
+
+
+
+
+
+.nav-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.typewriter {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: neonText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonText {
+    from {
+        text-shadow: 0 0 10px var(--primary-color),
+                     0 0 20px var(--primary-color),
+                     0 0 30px var(--primary-color);
+    }
+    to {
+        text-shadow: 0 0 5px var(--primary-color),
+                     0 0 10px var(--primary-color),
+                     0 0 15px var(--primary-color);
+    }
+}
+
+/* About Section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transform: translate(10px, 10px);
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover::after {
+    transform: translate(5px, 5px);
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.skill-bar .progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+    position: relative;
+}
+
+.skill-bar .progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover::before {
+    transform: translateY(-100%);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+.form-group {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+    transform: translateY(-1.5rem) scale(0.8);
+    color: var(--primary-color);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.social-link {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/*  */
+    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+
+
+
+
+html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rieko Brian - Data Science & ML Portfolio" />
+    <title>Rieko Brian - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">RB</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="particles-js"></div>
+
+    <!-- Hero Section with Parallax -->
+    <section id="hero" class="parallax">
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+        <div class="parallax-layer layer-3"></div>
+        <div class="container">
+            <h1 id="typewriter" class="neon-text"></h1>
+            <p class="holographic-text">Data Science | Machine Learning | Development</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn-primary button-3d">View Projects</a>
+                <a href="#contact" class="btn-secondary button-3d">Contact Me</a>
+            </div>
+            <div id="scrollIndicator" class="scroll-indicator">
+                <span>Scroll Down to Explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="neon-text">About Me</h2>
+            <div class="about-content">
+                <div class="about-image card-3d">
+                    <img src=".\profile1.jpg" alt="Rieko Brian" />
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate computer science and data science programmer with a focus on creating innovative solutions using cutting-edge technologies. I specialize in machine learning, data analysis, and software development.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Development</h3>
+                            <p>Full-stack development with modern technologies</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning</h3>
+                            <p>AI and ML algorithm implementation</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Data Analysis</h3>
+                            <p>Advanced data visualization and analytics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+    <div class="container">
+        <h2 class="neon-text">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category card-3d">
+                <h3>Technical Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar" data-level="90">
+                        <span class="skill-name"><i class="fas fa-python"></i> Python</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-level="85">
+                        <span class="skill-name"><i class="fas fa-brain"></i> Machine Learning</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-level="80">
+                        <span class="skill-name"><i class="fas fa-chart-line"></i> Data Analysis</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-level="75">
+                        <span class="skill-name"><i class="fas fa-code"></i> JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-level="95">
+                        <span class="skill-name"><i class="fas fa-html5"></i> HTML/CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar" data-level="85">
+                        <span class="skill-name"><i class="fas fa-database"></i> SQL</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 class="neon-text">Featured Projects</h2>
+        <div class="project-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+               <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
+                </div>
+                <div class="project-content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                </div>
+            </div>
+            
+            
+
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+</section>
+
+                <!-- Additional project cards with the same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="neon-text">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="neon-text">Let's Connect</h3>
+                <p>Feel free to reach out for collaborations, inquiries, or just to say hello!<p>
+            </div>
+            <form id="contact-form" class="card-3d">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required aria-label="Enter your name" />
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required aria-label="Enter your email address" />
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Your Phone Number" aria-label="Enter your phone number" />
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required aria-label="Enter your message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn-neon button-3d">Send Message</button>
+                <p id="form-response" class="hidden">Your message has been sent!</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="about-me">
+                <h3 class="neon-text">About Me</h3>
+                <p>Hi, I'm Rieko Brian, a passionate developer constantly exploring the intersection of technology and creativity.</p>
+            </div>
+            <div class="footer-links">
+                <h3 class="neon-text">Quick Links</h3>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="neon-text">Stay Connected</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com" class="social-link linkedin" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social-link github" aria-label="Visit my GitHub profile"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social-link twitter" aria-label="Visit my Twitter profile"><i class="fab fa-twitter"></i></a>
+                    <a href="https://scholar.google.com" class="social-link scholar" aria-label="Visit my Google Scholar profile"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Rieko Brian. Crafted with ❤️ and endless creativity.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+////
+Herosection css
+
+
+
+
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.typewriter {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: neonText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonText {
+  from {
+    text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color),
+      0 0 30px var(--primary-color);
+  }
+  to {
+    text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color),
+      0 0 15px var(--primary-color);
+  }
+}
+
+
+
+
+
+/* Glass Container */
+/* .container {
+  background: rgba(10, 25, 47, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  z-index: 2;
+} */
+
+Hero section
+background: var(--bg-gradient);
+
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+
+
+
+
+
+
+skill section#skills {
+  padding: 60px 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20rem;
+}
+
+.skill-category {
+  /* Added styling for skill category */
+  background: var(--card-bg); /* Use card background color */
+  border-radius: 10px;
+  padding: 1.5rem;
+  font: size 1.1rem;
+}
+
+.skill-category h3 {
+  color: var(--primary-color); /* Neon color for category headings */
+  margin-bottom: 1rem;
+}
+
+.skill-bars {
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Stack skill bars vertically */
+  gap: 1.5rem; /* Space between skill bars */
+}
+
+.skill-bar {
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; /* Needed for absolute positioning of skill name */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  padding: 0 1rem; /* Add some padding to the bar */
+}
+
+.skill-name {
+  position: absolute; /* Position skill name absolutely */
+  left: 1rem; /* Position skill name from the left */
+  top: 50%;
+  transform: translateY(-50%);
+  color: white; /* Text color for skills name */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.skill-name i {
+  color: #0ff; /* Neon color for icons */
+  font-size: 1.2rem; /* Adjust icon size if needed */
+}
+
+.skill-bar .progress {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+  position: absolute;
+  left: 10rem;
+  width: var(--level);
+  z-index: 1;
+}
+
+.skill-bar .progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+  z-index: 2;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 25, 47, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  width: 100%;
+
+  /* Add this line */
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
