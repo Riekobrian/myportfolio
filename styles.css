@@ -131,7 +131,7 @@ body {
   display: block;
   width: 25px;
   height: 3px;
-  background: var(--text-color);
+  background: #00ff88;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
@@ -142,7 +142,7 @@ body {
   position: absolute;
   width: 25px;
   height: 3px;
-  background: var(--text-color);
+  background: #00ff88;
   transition: all 0.3s ease-in-out;
 }
 
