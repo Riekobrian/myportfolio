@@ -1,11 +1,12 @@
-modules = ["web", "nodejs-20"]
-run = ".replit"
+
+modules = ["web", "nodejs-20", "python-3.10"]
+run = "python -m http.server 3000 --bind 0.0.0.0"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", ".replit"]
+run = ["sh", "-c", "python -m http.server 3000 --bind 0.0.0.0"]
 
 [workflows]
 
