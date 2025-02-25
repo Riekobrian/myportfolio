@@ -54,10 +54,10 @@ body {
 }  */
 /* Container */
 .container {
-  width: 95%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.25rem 0.625rem; /* Equivalent to 20px 10px */
+  padding: 2rem;
   position: relative;
   z-index: 2;
 
@@ -497,7 +497,7 @@ body {
 
 /* Projects Section */
 #projects {
-  padding: 3rem 2rem;
+  padding: 5rem 0;
   background: var(--bg-gradient);
   color: var(--text-color);
   text-align: center;
@@ -508,8 +508,9 @@ body {
 /* Grid Layout */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
 }
 
 /* Project Card */
