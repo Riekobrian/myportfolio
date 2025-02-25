@@ -88,15 +88,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //   sections.forEach((section) => observer.observe(section));
 
-  //   // Skill bars animation (preserved from original)
-  //   const skillObserver = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         const level = entry.target.getAttribute("data-level");
-  //         entry.target.querySelector(".progress").style.width = `${level}%`;
-  //       }
-  //     });
-  //   });
+  // Skill bars animation
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const level = entry.target.getAttribute("data-level");
+        entry.target.querySelector(".progress").style.width = `${level}%`;
+      }
+    });
+  });
 
   document.querySelectorAll(".skill-bar").forEach((bar) => {
     skillObserver.observe(bar);
