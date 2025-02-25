@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("nav ul li a");
 
-  const observer = new IntersectionObserver(
+  const sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.5, rootMargin: "-50px" },
   );
 
-  sections.forEach((section) => observer.observe(section));
+  sections.forEach((section) => sectionObserver.observe(section));
 
   // Skill bars animation
   const skillBars = document.querySelectorAll(".skill-bar");
