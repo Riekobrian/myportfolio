@@ -60,8 +60,8 @@ body {
   padding: 1.25rem 0.625rem; /* Equivalent to 20px 10px */
   position: relative;
   z-index: 2;
-  
-  
+
+
 
   @supports (backdrop-filter: blur(10px)) {
     /* Glassmorphism styling */
@@ -202,8 +202,8 @@ body {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: bold;
   margin-bottom: 1rem;
-  animation: neonText 1.5s ease-in-out infinite alternate;
   text-align: left;
+  color: var(--text-color);
 }
 #skills h2.neon-text {
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -289,17 +289,6 @@ body {
 .btn-secondary:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px var(--secondary-color);
-}
-
-@keyframes neonText {
-  from {
-    text-shadow: var(--neon-glow), 0 0 20px var(--primary-color),
-      0 0 30px var(--primary-color);
-  }
-  to {
-    text-shadow: var(--neon-glow), 0 0 10px var(--primary-color),
-      0 0 15px var(--primary-color);
-  }
 }
 
 @keyframes bounce {
@@ -973,7 +962,7 @@ footer {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: bold;
   margin-bottom: 1rem;
-  animation: neonText 1.5s ease-in-out infinite alternate;
+  
 }
 
 /* Neon Button */
