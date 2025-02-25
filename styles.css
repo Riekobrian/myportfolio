@@ -364,9 +364,6 @@ body {
 }
 
 .btn-secondary {
-  background: var(--secondary-color);
-}
-.btn-secondary {
   background: linear-gradient(
     90deg,
     var(--secondary-color),
@@ -800,6 +797,34 @@ body {
   color: var(--primary-color);
 }
 
+.contact-method {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.contact-method i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.contact-social {
+  margin-top: 2rem;
+}
+
+.contact-social a {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-social a:hover {
+  transform: scale(1.2);
+  box-shadow: var(--neon-glow);
+}
+
 .contact-info address a {
   color: var(--secondary-color);
   text-decoration: none;
@@ -914,10 +939,12 @@ button.btn-neon:hover {
 
 /* Footer */
 footer {
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
   background: var(--bg-color);
   color: var(--text-color);
   text-align: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer-grid {
@@ -925,129 +952,34 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
-.footer-grid h3 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
+.about-me {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
-.footer-grid ul {
-  list-style: none;
-  padding: 0;
-}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
 
-.footer-grid ul li {
-  margin-top: 0.5rem;
-}
+  .about-content, 
+  .skills-grid,
+  .project-grid {
+    padding: 0.5rem;
+  }
 
-.footer-grid ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-  transition: color 0.3s;
-}
+  .skill-category {
+    margin: 1rem 0;
+  }
 
-.footer-grid ul li a:hover {
-  color: var(--primary-color);
-}
-
-.footer-social .social-link {
-  margin: 0.5rem;
-  font-size: 1.8rem;
-  color: var(--text-color);
-  transition: color 0.3s, transform 0.3s;
-}
-
-.footer-social .social-link:hover {
-  color: var(--primary-color);
-  transform: scale(1.2);
-}
-
-/* Neon Button */
-.btn-neon {
-  background: var(--bg-color);
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  padding: 0.8rem 2rem;
-  border-radius: 5px;
-  transition: 0.3s;
-  cursor: pointer;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.btn-neon:hover {
-  color: var(--bg-color);
-  background: var(--primary-color);
-  box-shadow: var(--neon-glow);
-}
-/* Contact Section */
-#contact {
-  padding: 5rem 2rem;
-  background: var(--bg-gradient);
-  color: var(--text-color);
-  text-align: center;
-}
-
-.contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-around;
-}
-
-.contact-info {
-  max-width: 400px;
-  text-align: left;
-}
-
-.contact-info h3 {
-  font-size: 2rem;
-  color: var(--primary-color);
-}
-
-.contact-method {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  gap: 0.5rem;
-}
-
-.contact-method i {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-}
-
-.contact-social {
-  margin-top: 2rem;
-}
-
-.contact-social a {
-  margin: 0 0.5rem;
-  font-size: 2rem;
-  color: var(--text-color);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.contact-social a:hover {
-  transform: scale(1.2);
-  box-shadow: var(--neon-glow);
-}
-
-/* Footer */
-/* Footer */
-footer {
-  padding: 4rem 2rem;
-  background: var(--bg-color);
-  color: var(--text-color);
-  text-align: center;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  .project-card {
+    margin: 1rem 0;
+  }
 }
 
 .footer-grid h3 {
@@ -1084,13 +1016,6 @@ footer {
 .footer-social .social-link:hover {
   color: var(--primary-color);
   transform: scale(1.2);
-}
-
-/* Styling the text footer */
-.heading-text-large {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 /* Neon Button */
@@ -1140,4 +1065,11 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
+}
+
+/* Styling the text footer */
+.heading-text-large {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
