@@ -8,11 +8,11 @@ channel = "stable-24_05"
 run = ["sh", "-c", ".replit"]
 
 [workflows]
-runButton = "Run"
 
 [[workflows.workflow]]
 name = "Run"
 author = 37712242
+mode = "parallel"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
