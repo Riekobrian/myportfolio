@@ -198,14 +198,14 @@ body {
   animation: bounce 1.5s infinite;
 }
 
-.neon-text {
+.heading-text {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: left;
   color: var(--text-color);
 }
-#skills h2.neon-text {
+#skills h2.heading-text {
   font-size: clamp(2.5rem, 5vw, 4rem);
 
   margin-bottom: 0rem;
@@ -958,11 +958,10 @@ footer {
 }
 
 /* Styling the text footer */
-.neon-text20 {
+.heading-text-large {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: bold;
   margin-bottom: 1rem;
-  
 }
 
 /* Neon Button */
