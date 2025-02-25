@@ -504,16 +504,17 @@ body {
 
 .skill-bar .progress {
   height: 100%;
+  width: 0;
   background: linear-gradient(
     90deg,
     var(--primary-color),
     var(--secondary-color)
   );
   border-radius: 4px;
-  transition: width 1s ease-in-out;
+  transition: all 1s ease-in-out;
   position: absolute;
-  left: 10rem;
-  width: var(--level);
+  left: 0;
+  opacity: 0;
   z-index: 1;
 }
 

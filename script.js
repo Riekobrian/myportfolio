@@ -65,19 +65,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Skill bars animation
   const skillBars = document.querySelectorAll(".skill-bar");
-
+  
   const skillsObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const level = entry.target.getAttribute("data-level");
-        entry.target.querySelector(".progress").style.width = `${level}%`;
+        const progressBar = entry.target.querySelector(".progress");
+        if (progressBar) {
+          progressBar.style.width = `${level}%`;
+          progressBar.style.opacity = "1";
+        }
       }
     });
-  }, { threshold: 0.5 });
-
-  skillBars.forEach((bar) => {
-    skillsObserver.observe(bar);
+  }, { 
+    threshold: 0.2,
+    rootMargin: "0px"
   });
+
+  if (skillBars.length > 0) {
+    skillBars.forEach((bar) => {
+      skillsObserver.observe(bar);
+    });
+  }
 
   // Enhanced Form Submission
   const contactForm = document.getElementById("contact-form");
