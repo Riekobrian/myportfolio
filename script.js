@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Particles.js initialization with error handling
+  // Particles.js initialization
   if (typeof particlesJS !== "undefined") {
     particlesJS("particles-js", {
       particles: {
@@ -22,108 +22,64 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-//   Enhanced Typewriter effect
-    const typewriter = document.getElementById("typewriter");
-    const text = "Hello, I'm John Doe, a web developer.";
-    let index = 0;
+  // Typewriter effect
+  const typewriter = document.getElementById("typewriter");
+  const text = "Hello, I'm Rieko Brian, a Data Scientist.";
+  let index = 0;
 
-    function type() {
-      if (index < text.length) {
-        typewriter.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, 100);
-      }
+  function type() {
+    if (index < text.length) {
+      typewriter.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 100);
     }
-    type();
-
-
-    
-
-// addhere
-
-// again
-
-
-  function resetType() {
-    let fadeOut = setInterval(() => {
-      if (typewriter.textContent.length > 0) {
-        typewriter.textContent = typewriter.textContent.slice(0, -1);
-      } else {
-        clearInterval(fadeOut);
-        index = 0;
-        setTimeout(type, 500);
-      }
-    }, 50);
   }
-
-  // Parallax Effect
-  document.addEventListener("mousemove", (e) => {
-    const layers = document.querySelectorAll(".parallax-layer");
-    const mouseX = e.clientX / window.innerWidth;
-    const mouseY = e.clientY / window.innerHeight;
-
-    layers.forEach((layer, index) => {
-      const depth = (index + 1) * 5;
-      const translateX = mouseX * depth;
-      const translateY = mouseY * depth;
-      layer.style.transform = `translate(${translateX}px, ${translateY}px)`;
-    });
-  });
-
-  // Start the typewriter effect
   type();
 
-  // Enhanced Scroll Animation with Intersection Observer-2
+  // Smooth scroll with intersection observer
   const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav ul li a");
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible", "show");
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+            }
+          });
         }
       });
     },
-    { threshold: 0.5 }
+    { 
+      threshold: 0.5,
+      rootMargin: "-50px"
+    }
   );
 
-//   sections.forEach((section) => observer.observe(section));
+  sections.forEach((section) => observer.observe(section));
 
   // Skill bars animation
-  const skillObserver = new IntersectionObserver((entries) => {
+  const skillBars = document.querySelectorAll(".skill-bar");
+
+  const skillsObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const level = entry.target.getAttribute("data-level");
         entry.target.querySelector(".progress").style.width = `${level}%`;
       }
     });
+  }, { threshold: 0.5 });
+
+  skillBars.forEach((bar) => {
+    skillsObserver.observe(bar);
   });
 
-  document.querySelectorAll(".skill-bar").forEach((bar) => {
-    skillObserver.observe(bar);
-  });
-
-  // Enhanced Navigation Highlight
-  const navLinks = document.querySelectorAll("nav ul li a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").includes(current)) {
-        link.classList.add("active");
-      }
-    });
-  });
-
-  // Enhanced Form Submission with Error Handling
+  // Enhanced Form Submission
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
     contactForm.addEventListener("submit", async function (event) {
@@ -147,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Improved Navigation Toggle (preserved from original)
+  // Navigation Toggle
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -157,36 +113,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // New Feature: Smooth Scroll
+  // Smooth Scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      try {
-        const targetId = this.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: "smooth",
-          });
-        }
-      } catch (error) {
-        console.error("Smooth scroll error:", error);
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
       }
     });
   });
-
-  // New Feature: Parallax Effect
-  document.addEventListener("scroll", () => {
-    const parallaxLayers = document.querySelectorAll(".parallax-layer");
-    const scrollPosition = window.pageYOffset;
-
-    parallaxLayers.forEach((layer) => {
-      const speed = parseFloat(layer.getAttribute("data-speed") || "0.5");
-      const offset = scrollPosition * speed;
-      layer.style.transform = `translateY(${offset}px)`;
-    });
-  });
 });
+
 //skills code 
 document.addEventListener("DOMContentLoaded", function () {
   const skillBars = document.querySelectorAll(".skill-bar");
