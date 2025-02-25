@@ -1,65 +1,18 @@
-// p5.js Particle System
-let particles = [];
-
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  for (let i = 0; i < 80; i++) {
-    particles.push(new Particle());
-  }
-}
-
-function draw() {
-  clear(); // Transparent background to show CSS gradient
-  for (let i = particles.length - 1; i >= 0; i--) {
-    particles[i].update();
-    particles[i].show();
-    if (particles[i].isOffScreen()) {
-      particles.splice(i, 1);
-      particles.push(new Particle());
-    }
-  }
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
-class Particle {
-  constructor() {
-    this.x = random(width);
-    this.y = random(height);
-    this.vx = random(-1, 1);
-    this.vy = random(-1, 1);
-    this.size = random(2, 5);
-    this.alpha = random(50, 255);
-    this.color = random(1) > 0.5 ? "#00ff88" : "#0066ff"; // Match CSS vars
-  }
-
-  update() {
-    this.x += this.vx;
-    this.y += this.vy;
-    this.alpha -= 0.5; // Gradual fade
-  }
-
-  show() {
-    noStroke();
-    fill(this.color, this.alpha);
-    ellipse(this.x, this.y, this.size);
-  }
-
-  isOffScreen() {
-    return (
-      this.x < 0 ||
-      this.x > width ||
-      this.y < 0 ||
-      this.y > height ||
-      this.alpha <= 0
-    );
-  }
-}
-
-// Main Portfolio Logic
 document.addEventListener("DOMContentLoaded", () => {
+  // Particles.js initialization
+  if (typeof particlesJS !== "undefined") {
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        move: { enable: true, speed: 2 },
+      },
+    });
+  }
+
   // Typewriter effect
   const typewriter = document.getElementById("typewriter");
   const text = "Hello, I'm Rieko Brian, a Data Scientist.";
@@ -78,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("nav ul li a");
 
-  const sectionObserver = new IntersectionObserver(
+  const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -96,12 +49,12 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.5, rootMargin: "-50px" },
   );
 
-  sections.forEach((section) => sectionObserver.observe(section));
+  sections.forEach((section) => observer.observe(section));
 
   // Skill bars animation
   const skillBars = document.querySelectorAll(".skill-bar");
 
-  const skillObserver = new IntersectionObserver(
+  const skillsObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -119,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (skillBars.length > 0) {
     skillBars.forEach((bar) => {
-      skillObserver.observe(bar);
+      skillsObserver.observe(bar);
     });
   }
 

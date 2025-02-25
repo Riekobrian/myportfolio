@@ -1,382 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Rieko Brian - Data Science & ML Portfolio"
-        />
-        <title>Rieko Brian - Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="styles.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"
-            defer
-        ></script>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-brand">RB</div>
-            <button
-                class="nav-toggle"
-                aria-label="Toggle navigation"
-                aria-expanded="false"
-            >
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rieko Brian - Data Science & ML Portfolio" />
+    <title>Rieko Brian - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">RB</div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="container">
-                <h1 id="typewriter" class="heading-text"></h1>
-                <p class="holographic-text">
-                    Data Science | Machine Learning | Development
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn-primary button-3d"
-                        >View Projects</a
-                    >
-                    <a href="#contact" class="btn-secondary button-3d"
-                        >Contact Me</a
-                    >
-                </div>
-                <div id="scrollIndicator" class="scroll-indicator">
-                    <span>Scroll Down to Explore</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1 id="typewriter" class="heading-text"></h1>
+            <p class="holographic-text">Data Science | Machine Learning | Development</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn-primary button-3d">View Projects</a>
+                <a href="#contact" class="btn-secondary button-3d">Contact Me</a>
             </div>
-        </section>
+            <div id="scrollIndicator" class="scroll-indicator">
+                <span>Scroll Down to Explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2 class="heading-text">About Me</h2>
-                <div class="about-content">
-                    <div class="about-image card-3d">
-                        <img src=".\profile1.jpg" alt="Rieko Brian" />
-                    </div>
-                    <div class="about-text">
-                        <p>
-                            Hello! I'm a passionate computer science and data
-                            science programmer with a focus on creating
-                            innovative solutions using cutting-edge
-                            technologies. I specialize in machine learning, data
-                            analysis, and software development.
-                        </p>
-                        <div class="about-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-code"></i>
-                                <h3>Development</h3>
-                                <p>
-                                    Full-stack development with modern
-                                    technologies
-                                </p>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-brain"></i>
-                                <h3>Machine Learning</h3>
-                                <p>AI and ML algorithm implementation</p>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-chart-line"></i>
-                                <h3>Data Analysis</h3>
-                                <p>Advanced data visualization and analytics</p>
-                            </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="heading-text">About Me</h2>
+            <div class="about-content">
+                <div class="about-image card-3d">
+                    <img src=".\profile1.jpg" alt="Rieko Brian" />
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate computer science and data science programmer with a focus on creating innovative solutions using cutting-edge technologies. I specialize in machine learning, data analysis, and software development.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Development</h3>
+                            <p>Full-stack development with modern technologies</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning</h3>
+                            <p>AI and ML algorithm implementation</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Data Analysis</h3>
+                            <p>Advanced data visualization and analytics</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="container">
-                <h2 class="heading-text">Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category card-3d">
-                        <h3>Technical Skills</h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar" data-level="95">
-                                <span class="skill-name"
-                                    ><i class="fab fa-python"></i> Python</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="heading-text">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category card-3d">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="95">
+                            <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
-                            <div class="skill-bar" data-level="85">
-                                <span class="skill-name"
-                                    ><i class="fas fa-brain"></i> Machine
-                                    Learning</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <span class="skill-name"><i class="fas fa-brain"></i> Machine Learning</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
-                            <div class="skill-bar" data-level="80">
-                                <span class="skill-name"
-                                    ><i class="fas fa-chart-line"></i> Data
-                                    Analysis</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+                        </div>
+                        <div class="skill-bar" data-level="80">
+                            <span class="skill-name"><i class="fas fa-chart-line"></i> Data Analysis</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
-                            <div class="skill-bar" data-level="75">
-                                <span class="skill-name"
-                                    ><i class="fa-brands fa-js"></i>
-                                    JavaScript</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+                        </div>
+                        <div class="skill-bar" data-level="75">
+                            <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
-                            <div class="skill-bar" data-level="95">
-                                <span class="skill-name"
-                                    ><i class="fa-brands fa-html5"></i>
-                                    HTML/CSS</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+                        </div>
+                        <div class="skill-bar" data-level="95">
+                            <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
-                            <div class="skill-bar" data-level="85">
-                                <span class="skill-name"
-                                    ><i class="fas fa-database"></i> SQL</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <span class="skill-name"><i class="fas fa-database"></i> SQL</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
-                            <div class="skill-bar" data-level="85">
-                                <span class="skill-name"
-                                    ><i class="fa-brands fa-react"></i>
-                                    React</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <span class="skill-name"><i class="fa-brands fa-react"></i> React</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
-                            <div class="skill-bar" data-level="60">
-                                <span class="skill-name"
-                                    ><i class="fa-solid fa-cloud"></i>
-                                    Oracle/Azure</span
-                                >
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
-                                </div>
+                        </div>
+                        <div class="skill-bar" data-level="60">
+                            <span class="skill-name"><i class="fa-solid fa-cloud"></i> Oracle/Azure</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="container">
-                <h2 class="heading-text">Projects</h2>
-                <h3>Featured Projects</h3>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img
-                                src="./predictive.jpeg"
-                                alt="Screenshot of Predictive Analytics Project"
-                            />
-                        </div>
-                        <div class="project-content">
-                            <h3>Predictive Analytics</h3>
-                            <p>
-                                Developed a predictive model to forecast sales
-                                using machine learning algorithms.
-                            </p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>Scikit-learn</span>
-                            </div>
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="neon-button"
-                                >View Project</a
-                            >
-                        </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="heading-text">Projects</h2>
+            <h3>Featured Projects</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./predictive.jpeg" alt="Screenshot of Predictive Analytics Project">
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img
-                                src="./WebScrapping.png"
-                                alt="Screenshot of Web Scraping Project"
-                            />
+                    <div class="project-content">
+                        <h3>Predictive Analytics</h3>
+                        <p>Developed a predictive model to forecast sales using machine learning algorithms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Scikit-learn</span>
                         </div>
-                        <div class="project-content">
-                            <h3>Web Scraping</h3>
-                            <p>
-                                Built a web scraper to extract and analyze data
-                                from multiple sources.
-                            </p>
-                            <div class="project-tech">
-                                <span>APIs</span>
-                                <span>Selenium</span>
-                                <span>Beautiful Soup</span>
-                                <span>Scrapy</span>
-                            </div>
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="neon-button"
-                                >View Project</a
-                            >
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./WebScrapping.png" alt="Screenshot of Web Scraping Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Scraping</h3>
+                        <p>Built a web scraper to extract and analyze data from multiple sources.</p>
+                        <div class="project-tech">
+                            <span>APIs</span>
+                            <span>Selenium</span>
+                            <span>Beautiful Soup</span>
+                            <span>Scrapy</span>
                         </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="neon-button">View Project</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2 class="heading-text">Get In Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3 class="heading-text">Let's Connect</h3>
-                        <p>
-                            Feel free to reach out for collaborations,
-                            inquiries, or just to say hello!
-                        </p>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="heading-text">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="heading-text">Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
+                </div>
+                <form id="contact-form" class="card-3d">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required aria-label="Enter your name" />
+                        <label for="name">Name</label>
                     </div>
-                    <form id="contact-form" class="card-3d">
-                        <div class="form-group">
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Your Name"
-                                required
-                                aria-label="Enter your name"
-                            />
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="Your Email"
-                                required
-                                aria-label="Enter your email address"
-                            />
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input
-                                type="tel"
-                                id="phone"
-                                placeholder="Your Phone Number"
-                                aria-label="Enter your phone number"
-                            />
-                            <label for="phone">Phone</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea
-                                id="message"
-                                placeholder="Your Message"
-                                required
-                                aria-label="Enter your message"
-                            ></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                        <button type="submit" class="btn-neon button-3d">
-                            Send Message
-                        </button>
-                        <p id="form-response" class="hidden">
-                            Your message has been sent!
-                        </p>
-                    </form>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required aria-label="Enter your email address" />
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Your Phone Number" aria-label="Enter your phone number" />
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required aria-label="Enter your message"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn-neon button-3d">Send Message</button>
+                    <p id="form-response" class="hidden">Your message has been sent!</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="about-me">
+                    <h3 class="heading-text-large">About Me</h3>
+                    <p>Hi, I'm Rieko Brian, a passionate developer constantly exploring the intersection of technology and creativity.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="heading-text-large">Quick Links</h3>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="heading-text-large">Stay Connected</h3>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" class="social-link linkedin" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com" class="social-link github" aria-label="Visit my GitHub profile"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com" class="social-link twitter" aria-label="Visit my Twitter profile"><img src="./x-twitter.svg" alt="Twitter Icon" width="24"></a>
+                        <a href="https://scholar.google.com" class="social-link scholar" aria-label="Visit my Google Scholar profile"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
                 </div>
             </div>
-        </section>
+            <p>© 2024 Rieko Brian. Crafted with ❤️ and endless creativity.</p>
+        </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="about-me">
-                        <h3 class="heading-text-large">About Me</h3>
-                        <p>
-                            Hi, I'm Rieko Brian, a passionate developer
-                            constantly exploring the intersection of technology
-                            and creativity.
-                        </p>
-                    </div>
-                    <div class="footer-links">
-                        <h3 class="heading-text-large">Quick Links</h3>
-                        <ul>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#about">About</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-social">
-                        <h3 class="heading-text-large">Stay Connected</h3>
-                        <div class="social-links">
-                            <a
-                                href="https://linkedin.com"
-                                class="social-link linkedin"
-                                aria-label="Visit my LinkedIn profile"
-                                ><i class="fab fa-linkedin"></i
-                            ></a>
-                            <a
-                                href="https://github.com"
-                                class="social-link github"
-                                aria-label="Visit my GitHub profile"
-                                ><i class="fab fa-github"></i
-                            ></a>
-                            <a
-                                href="https://twitter.com"
-                                class="social-link twitter"
-                                aria-label="Visit my Twitter profile"
-                                ><img
-                                    src="./x-twitter.svg"
-                                    alt="Twitter Icon"
-                                    width="24"
-                            /></a>
-                            <a
-                                href="https://scholar.google.com"
-                                class="social-link scholar"
-                                aria-label="Visit my Google Scholar profile"
-                                ><i class="fas fa-graduation-cap"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-                <p>
-                    © 2024 Rieko Brian. Crafted with ❤️ and endless creativity.
-                </p>
-            </div>
-        </footer>
-
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
