@@ -1,0 +1,19 @@
+modules = ["web", "nodejs-20"]
+run = ".replit"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", ".replit"]
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 37712242
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python -m http.server 3000 --bind 0.0.0.0"
